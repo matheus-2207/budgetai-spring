@@ -14,7 +14,7 @@ Um painel pessoal completo para consultar resumo, filtrar e listar despesas e ca
 ## Operating Context
 Aplicação Spring Boot em localhost:8080; banco H2 em arquivo. Ambiente de aprendizado e portfólio DIO. Desenvolvimento visual direto no código confirmado pelo usuário.
 
-Publicação preparada para Render Free: perfil `demo` independente, H2 em memória com exemplos fictícios no mês atual e aviso de que os dados são públicos, compartilhados e temporários. O acesso à hospedagem ainda precisa ser concluído; não há URL pública verificada.
+Publicação no Render Free: https://budgetai-spring.onrender.com/. Perfil `demo` independente, H2 em memória com exemplos fictícios no mês atual e aviso de que os dados são públicos, compartilhados e temporários. Painel e carregamento dos cinco exemplos pela API observados no navegador em 16/10/2026.
 
 ## Capabilities and Constraints
 Despesas em reais, datas e categorias fixas. Consultas por período de até 366 dias. Lista de até 200 itens; resumo inclui todos. Sem receitas, edição ou exclusão na API. Modo local sem chamadas de IA paga. Manter dados e endpoints existentes. Desktop e navegador móvel.

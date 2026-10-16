@@ -1,5 +1,9 @@
 # BudgetAI — orçamento por texto e voz
 
+**[Abrir demonstração online](https://budgetai-spring.onrender.com/)** · Render Free · Sem chave de IA
+
+Use somente dados fictícios. A demonstração é pública, compartilhada e temporária; os registros reiniciam junto com o servidor. Depois de ficar sem visitas, a primeira abertura pode levar alguns minutos.
+
 API de despesas pessoais com **Spring Boot** e **Spring AI**. Recebe comandos em português por texto ou áudio, usa Tool Calling para executar funções reais e responde com texto ou voz gerada por IA.
 
 Projeto educacional desenvolvido para o desafio da DIO **Desenvolvendo sua API Inteligente com Reconhecimento de Fala e Spring Boot**. A arquitetura e o fluxo foram inspirados no [módulo 05 da trilha oficial](https://github.com/digitalinnovationone/dio-spring-boot-learning-track/tree/main/05-spring-ai), com implementação própria e melhorias descritas abaixo.
@@ -8,7 +12,7 @@ Projeto educacional desenvolvido para o desafio da DIO **Desenvolvendo sua API I
 
 ### Hospedagem de demonstração
 
-O projeto inclui `Dockerfile` e `render.yaml` para publicação no Render Free. O perfil `demo` carrega despesas fictícias no mês atual, usa banco temporário separado dos dados locais e mostra um aviso de demonstração na interface. Veja [como publicar e os limites](docs/DEPLOY.md). A publicação ainda depende de concluir o acesso à hospedagem; não há URL pública confirmada.
+O projeto inclui `Dockerfile` e `render.yaml` para publicação no Render Free. O perfil `demo` carrega despesas fictícias no mês atual, usa banco temporário separado dos dados locais e mostra um aviso de demonstração na interface. Veja [como publicar e os limites](docs/DEPLOY.md). A demonstração está disponível em **https://budgetai-spring.onrender.com/**.
 
 Acesse **http://127.0.0.1:8080/** após iniciar a aplicação. A tela funciona sem chave de IA e inclui resumo por período, distribuição por categoria, busca na lista, filtros, cadastro de despesa e exportação CSV da lista filtrada.
 
