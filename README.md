@@ -24,8 +24,9 @@ Outras melhorias:
 - Valores monetários com `BigDecimal`, em reais, sem conversão implícita de centavos.
 - Validações compartilhadas entre REST e ferramentas: descrição obrigatória, categoria e data obrigatórias, valor positivo com até duas casas decimais, limite de valor e rejeição de datas futuras.
 - Períodos inclusivos de até 366 dias e tratamento de consultas sem resultados.
-- Respostas de erro HTTP no formato `application/problem+json`.
+- Respostas de erro HTTP no formato `application/problem+json`, com diagnóstico de crédito/cota, autenticação, permissão e rede nas falhas de IA.
 - Perfil local que funciona sem credenciais de IA, para estudar e testar persistência e regras.
+- Bibliotecas nativas de DNS do Netty para macOS Apple Silicon e Intel.
 - Separação entre controladores REST, integração de IA, serviço de aplicação, domínio e adaptador de persistência.
 - Testes automatizados de domínio, HTTP com banco real em memória, ferramentas e orquestração de áudio com mocks.
 

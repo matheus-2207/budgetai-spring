@@ -3,12 +3,13 @@
 ## Resultado
 
 - Compilação e geração do JAR: `BUILD SUCCESSFUL`.
-- 19 testes executados, 0 falhas, 0 erros e 0 ignorados.
+- 23 testes executados, 0 falhas, 0 erros e 0 ignorados.
 - API iniciada pelos testes em porta aleatória e banco H2 em memória.
 - Nenhuma chave real de API utilizada e nenhuma chamada paga realizada.
 
 | Classe | Testes | Falhas |
 | --- | --- | --- |
+| `AiProviderExceptionTest` | 4 | 0 |
 | `AssistantServiceTest` | 4 | 0 |
 | `BudgetToolsTest` | 3 | 0 |
 | `ExpenseApiTest` | 6 | 0 |
@@ -36,3 +37,9 @@ Nesta execução, o cache do Gradle foi direcionado para uma pasta temporária d
 ## O que não foi verificado
 
 A transcrição, a escolha de ferramenta pelo modelo e a síntese com o provedor real não foram executadas. Exigem chave e acesso aos modelos. Os mocks verificam o encadeamento interno, sem garantir a qualidade ou disponibilidade do serviço externo.
+
+## Atualização de compatibilidade macOS e diagnóstico
+
+Incluídas bibliotecas de DNS nativo do Netty para Apple Silicon e Intel. O log observado de fallback para DNS do sistema não confirmou a causa da falha externa. A ausência do aviso após a correção ainda precisa ser conferida reiniciando o perfil de IA.
+
+Os novos testes verificam a classificação de erro 401, crédito/cota insuficiente, limitação de chamadas, escopo e DNS. O cliente recebe apenas um código de diagnóstico e uma orientação; corpo bruto do provedor, prompts e credenciais não são retornados nem registrados pelo handler.
