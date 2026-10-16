@@ -4,6 +4,14 @@ API de despesas pessoais com **Spring Boot** e **Spring AI**. Recebe comandos em
 
 Projeto educacional desenvolvido para o desafio da DIO **Desenvolvendo sua API Inteligente com Reconhecimento de Fala e Spring Boot**. A arquitetura e o fluxo foram inspirados no [módulo 05 da trilha oficial](https://github.com/digitalinnovationone/dio-spring-boot-learning-track/tree/main/05-spring-ai), com implementação própria e melhorias descritas abaixo.
 
+## Painel visual local
+
+Acesse **http://127.0.0.1:8080/** após iniciar a aplicação. A tela funciona sem chave de IA e inclui resumo por período, distribuição por categoria, busca na lista, filtros, cadastro de despesa e exportação CSV da lista filtrada.
+
+A interface é HTML, CSS e JavaScript, servida pelo próprio Spring Boot, sem instalação de ferramentas de frontend e sem fontes ou bibliotecas externas. Foi desenvolvida com a skill Impeccable, na direção Caderno digital confirmada pelo usuário.
+
+O total e a distribuição sempre representam todas as despesas do período; os filtros de categoria e busca afetam apenas a lista. A listagem tem limite de 200 itens, indicado quando atingido. Gastos fictícios de demonstração recebem um rótulo na interface.
+
 ## O que a API faz
 
 - Registra despesas com descrição, valor em reais, categoria e data.

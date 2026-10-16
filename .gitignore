@@ -10,3 +10,9 @@
 *.wav
 *.m4a
 .DS_Store
+
+/.impeccable/questions/
+/.impeccable/review/
+/.impeccable/mocks/
+/.impeccable/decision.json
+/.impeccable/surface-body.md

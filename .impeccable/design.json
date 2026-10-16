@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T13:33:19.011049+00:00",
+  "title": "Design System: BudgetAI",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "canonical": "#6e51d9",
+        "tonalRamp": [
+          "oklch(15% 0.1982 287.67)",
+          "oklch(26.43% 0.1982 287.67)",
+          "oklch(37.86% 0.1982 287.67)",
+          "oklch(49.29% 0.1982 287.67)",
+          "oklch(60.71% 0.1982 287.67)",
+          "oklch(72.14% 0.1982 287.67)",
+          "oklch(83.57% 0.1982 287.67)",
+          "oklch(95% 0.1982 287.67)"
+        ]
+      },
+      "accent-dark": {
+        "role": "primary",
+        "displayName": "Accent Dark",
+        "canonical": "#5738bc",
+        "tonalRamp": [
+          "oklch(15% 0.1946 286.80)",
+          "oklch(26.43% 0.1946 286.80)",
+          "oklch(37.86% 0.1946 286.80)",
+          "oklch(49.29% 0.1946 286.80)",
+          "oklch(60.71% 0.1946 286.80)",
+          "oklch(72.14% 0.1946 286.80)",
+          "oklch(83.57% 0.1946 286.80)",
+          "oklch(95% 0.1946 286.80)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Accent Soft",
+        "canonical": "#efebfb",
+        "tonalRamp": [
+          "oklch(15% 0.0218 297.42)",
+          "oklch(26.43% 0.0218 297.42)",
+          "oklch(37.86% 0.0218 297.42)",
+          "oklch(49.29% 0.0218 297.42)",
+          "oklch(60.71% 0.0218 297.42)",
+          "oklch(72.14% 0.0218 297.42)",
+          "oklch(83.57% 0.0218 297.42)",
+          "oklch(95% 0.0218 297.42)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Accent Ink",
+        "canonical": "#6244bd",
+        "tonalRamp": [
+          "oklch(15% 0.1806 289.39)",
+          "oklch(26.43% 0.1806 289.39)",
+          "oklch(37.86% 0.1806 289.39)",
+          "oklch(49.29% 0.1806 289.39)",
+          "oklch(60.71% 0.1806 289.39)",
+          "oklch(72.14% 0.1806 289.39)",
+          "oklch(83.57% 0.1806 289.39)",
+          "oklch(95% 0.1806 289.39)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Bg",
+        "canonical": "#f6f7fb",
+        "tonalRamp": [
+          "oklch(15% 0.0054 274.97)",
+          "oklch(26.43% 0.0054 274.97)",
+          "oklch(37.86% 0.0054 274.97)",
+          "oklch(49.29% 0.0054 274.97)",
+          "oklch(60.71% 0.0054 274.97)",
+          "oklch(72.14% 0.0054 274.97)",
+          "oklch(83.57% 0.0054 274.97)",
+          "oklch(95% 0.0054 274.97)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26.43% 0.0000 89.88)",
+          "oklch(37.86% 0.0000 89.88)",
+          "oklch(49.29% 0.0000 89.88)",
+          "oklch(60.71% 0.0000 89.88)",
+          "oklch(72.14% 0.0000 89.88)",
+          "oklch(83.57% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "sidebar": {
+        "role": "neutral",
+        "displayName": "Sidebar",
+        "canonical": "#fcfcfe",
+        "tonalRamp": [
+          "oklch(15% 0.0026 286.35)",
+          "oklch(26.43% 0.0026 286.35)",
+          "oklch(37.86% 0.0026 286.35)",
+          "oklch(49.29% 0.0026 286.35)",
+          "oklch(60.71% 0.0026 286.35)",
+          "oklch(72.14% 0.0026 286.35)",
+          "oklch(83.57% 0.0026 286.35)",
+          "oklch(95% 0.0026 286.35)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#202331",
+        "tonalRamp": [
+          "oklch(15% 0.0267 275.01)",
+          "oklch(26.43% 0.0267 275.01)",
+          "oklch(37.86% 0.0267 275.01)",
+          "oklch(49.29% 0.0267 275.01)",
+          "oklch(60.71% 0.0267 275.01)",
+          "oklch(72.14% 0.0267 275.01)",
+          "oklch(83.57% 0.0267 275.01)",
+          "oklch(95% 0.0267 275.01)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "canonical": "#696d7f",
+        "tonalRamp": [
+          "oklch(15% 0.0285 275.51)",
+          "oklch(26.43% 0.0285 275.51)",
+          "oklch(37.86% 0.0285 275.51)",
+          "oklch(49.29% 0.0285 275.51)",
+          "oklch(60.71% 0.0285 275.51)",
+          "oklch(72.14% 0.0285 275.51)",
+          "oklch(83.57% 0.0285 275.51)",
+          "oklch(95% 0.0285 275.51)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "#e9eaf1",
+        "tonalRamp": [
+          "oklch(15% 0.0095 279.68)",
+          "oklch(26.43% 0.0095 279.68)",
+          "oklch(37.86% 0.0095 279.68)",
+          "oklch(49.29% 0.0095 279.68)",
+          "oklch(60.71% 0.0095 279.68)",
+          "oklch(72.14% 0.0095 279.68)",
+          "oklch(83.57% 0.0095 279.68)",
+          "oklch(95% 0.0095 279.68)"
+        ]
+      },
+      "danger": {
+        "role": "secondary",
+        "displayName": "Danger",
+        "canonical": "#ad3045",
+        "tonalRamp": [
+          "oklch(15% 0.1605 15.65)",
+          "oklch(26.43% 0.1605 15.65)",
+          "oklch(37.86% 0.1605 15.65)",
+          "oklch(49.29% 0.1605 15.65)",
+          "oklch(60.71% 0.1605 15.65)",
+          "oklch(72.14% 0.1605 15.65)",
+          "oklch(83.57% 0.1605 15.65)",
+          "oklch(95% 0.1605 15.65)"
+        ]
+      },
+      "success": {
+        "role": "secondary",
+        "displayName": "Success",
+        "canonical": "#327463",
+        "tonalRamp": [
+          "oklch(15% 0.0730 173.91)",
+          "oklch(26.43% 0.0730 173.91)",
+          "oklch(37.86% 0.0730 173.91)",
+          "oklch(49.29% 0.0730 173.91)",
+          "oklch(60.71% 0.0730 173.91)",
+          "oklch(72.14% 0.0730 173.91)",
+          "oklch(83.57% 0.0730 173.91)",
+          "oklch(95% 0.0730 173.91)"
+        ]
+      },
+      "groceries-color": {
+        "role": "secondary",
+        "displayName": "Groceries Color",
+        "canonical": "#8a72df",
+        "tonalRamp": [
+          "oklch(15% 0.1597 291.20)",
+          "oklch(26.43% 0.1597 291.20)",
+          "oklch(37.86% 0.1597 291.20)",
+          "oklch(49.29% 0.1597 291.20)",
+          "oklch(60.71% 0.1597 291.20)",
+          "oklch(72.14% 0.1597 291.20)",
+          "oklch(83.57% 0.1597 291.20)",
+          "oklch(95% 0.1597 291.20)"
+        ]
+      },
+      "groceries-bg": {
+        "role": "secondary",
+        "displayName": "Groceries Bg",
+        "canonical": "#f0ebfb",
+        "tonalRamp": [
+          "oklch(15% 0.0220 300.20)",
+          "oklch(26.43% 0.0220 300.20)",
+          "oklch(37.86% 0.0220 300.20)",
+          "oklch(49.29% 0.0220 300.20)",
+          "oklch(60.71% 0.0220 300.20)",
+          "oklch(72.14% 0.0220 300.20)",
+          "oklch(83.57% 0.0220 300.20)",
+          "oklch(95% 0.0220 300.20)"
+        ]
+      },
+      "groceries-ink": {
+        "role": "secondary",
+        "displayName": "Groceries Ink",
+        "canonical": "#654eab",
+        "tonalRamp": [
+          "oklch(15% 0.1430 291.71)",
+          "oklch(26.43% 0.1430 291.71)",
+          "oklch(37.86% 0.1430 291.71)",
+          "oklch(49.29% 0.1430 291.71)",
+          "oklch(60.71% 0.1430 291.71)",
+          "oklch(72.14% 0.1430 291.71)",
+          "oklch(83.57% 0.1430 291.71)",
+          "oklch(95% 0.1430 291.71)"
+        ]
+      },
+      "pharma-color": {
+        "role": "secondary",
+        "displayName": "Pharma Color",
+        "canonical": "#76ad9e",
+        "tonalRamp": [
+          "oklch(15% 0.0620 175.51)",
+          "oklch(26.43% 0.0620 175.51)",
+          "oklch(37.86% 0.0620 175.51)",
+          "oklch(49.29% 0.0620 175.51)",
+          "oklch(60.71% 0.0620 175.51)",
+          "oklch(72.14% 0.0620 175.51)",
+          "oklch(83.57% 0.0620 175.51)",
+          "oklch(95% 0.0620 175.51)"
+        ]
+      },
+      "pharma-bg": {
+        "role": "secondary",
+        "displayName": "Pharma Bg",
+        "canonical": "#eaf4ef",
+        "tonalRamp": [
+          "oklch(15% 0.0125 164.80)",
+          "oklch(26.43% 0.0125 164.80)",
+          "oklch(37.86% 0.0125 164.80)",
+          "oklch(49.29% 0.0125 164.80)",
+          "oklch(60.71% 0.0125 164.80)",
+          "oklch(72.14% 0.0125 164.80)",
+          "oklch(83.57% 0.0125 164.80)",
+          "oklch(95% 0.0125 164.80)"
+        ]
+      },
+      "pharma-ink": {
+        "role": "secondary",
+        "displayName": "Pharma Ink",
+        "canonical": "#3c7766",
+        "tonalRamp": [
+          "oklch(15% 0.0681 172.63)",
+          "oklch(26.43% 0.0681 172.63)",
+          "oklch(37.86% 0.0681 172.63)",
+          "oklch(49.29% 0.0681 172.63)",
+          "oklch(60.71% 0.0681 172.63)",
+          "oklch(72.14% 0.0681 172.63)",
+          "oklch(83.57% 0.0681 172.63)",
+          "oklch(95% 0.0681 172.63)"
+        ]
+      },
+      "auto-color": {
+        "role": "secondary",
+        "displayName": "Auto Color",
+        "canonical": "#719bc9",
+        "tonalRamp": [
+          "oklch(15% 0.0826 251.32)",
+          "oklch(26.43% 0.0826 251.32)",
+          "oklch(37.86% 0.0826 251.32)",
+          "oklch(49.29% 0.0826 251.32)",
+          "oklch(60.71% 0.0826 251.32)",
+          "oklch(72.14% 0.0826 251.32)",
+          "oklch(83.57% 0.0826 251.32)",
+          "oklch(95% 0.0826 251.32)"
+        ]
+      },
+      "auto-bg": {
+        "role": "secondary",
+        "displayName": "Auto Bg",
+        "canonical": "#edf3fa",
+        "tonalRamp": [
+          "oklch(15% 0.0114 252.09)",
+          "oklch(26.43% 0.0114 252.09)",
+          "oklch(37.86% 0.0114 252.09)",
+          "oklch(49.29% 0.0114 252.09)",
+          "oklch(60.71% 0.0114 252.09)",
+          "oklch(72.14% 0.0114 252.09)",
+          "oklch(83.57% 0.0114 252.09)",
+          "oklch(95% 0.0114 252.09)"
+        ]
+      },
+      "auto-ink": {
+        "role": "secondary",
+        "displayName": "Auto Ink",
+        "canonical": "#476f99",
+        "tonalRamp": [
+          "oklch(15% 0.0804 250.68)",
+          "oklch(26.43% 0.0804 250.68)",
+          "oklch(37.86% 0.0804 250.68)",
+          "oklch(49.29% 0.0804 250.68)",
+          "oklch(60.71% 0.0804 250.68)",
+          "oklch(72.14% 0.0804 250.68)",
+          "oklch(83.57% 0.0804 250.68)",
+          "oklch(95% 0.0804 250.68)"
+        ]
+      },
+      "food-color": {
+        "role": "secondary",
+        "displayName": "Food Color",
+        "canonical": "#d6a55e",
+        "tonalRamp": [
+          "oklch(15% 0.1060 75.19)",
+          "oklch(26.43% 0.1060 75.19)",
+          "oklch(37.86% 0.1060 75.19)",
+          "oklch(49.29% 0.1060 75.19)",
+          "oklch(60.71% 0.1060 75.19)",
+          "oklch(72.14% 0.1060 75.19)",
+          "oklch(83.57% 0.1060 75.19)",
+          "oklch(95% 0.1060 75.19)"
+        ]
+      },
+      "food-bg": {
+        "role": "secondary",
+        "displayName": "Food Bg",
+        "canonical": "#fbf1e4",
+        "tonalRamp": [
+          "oklch(15% 0.0203 74.66)",
+          "oklch(26.43% 0.0203 74.66)",
+          "oklch(37.86% 0.0203 74.66)",
+          "oklch(49.29% 0.0203 74.66)",
+          "oklch(60.71% 0.0203 74.66)",
+          "oklch(72.14% 0.0203 74.66)",
+          "oklch(83.57% 0.0203 74.66)",
+          "oklch(95% 0.0203 74.66)"
+        ]
+      },
+      "food-ink": {
+        "role": "secondary",
+        "displayName": "Food Ink",
+        "canonical": "#916326",
+        "tonalRamp": [
+          "oklch(15% 0.0965 70.42)",
+          "oklch(26.43% 0.0965 70.42)",
+          "oklch(37.86% 0.0965 70.42)",
+          "oklch(49.29% 0.0965 70.42)",
+          "oklch(60.71% 0.0965 70.42)",
+          "oklch(72.14% 0.0965 70.42)",
+          "oklch(83.57% 0.0965 70.42)",
+          "oklch(95% 0.0965 70.42)"
+        ]
+      },
+      "leisure-color": {
+        "role": "secondary",
+        "displayName": "Leisure Color",
+        "canonical": "#ca87a3",
+        "tonalRamp": [
+          "oklch(15% 0.0892 352.95)",
+          "oklch(26.43% 0.0892 352.95)",
+          "oklch(37.86% 0.0892 352.95)",
+          "oklch(49.29% 0.0892 352.95)",
+          "oklch(60.71% 0.0892 352.95)",
+          "oklch(72.14% 0.0892 352.95)",
+          "oklch(83.57% 0.0892 352.95)",
+          "oklch(95% 0.0892 352.95)"
+        ]
+      },
+      "leisure-bg": {
+        "role": "secondary",
+        "displayName": "Leisure Bg",
+        "canonical": "#f8edf2",
+        "tonalRamp": [
+          "oklch(15% 0.0135 347.95)",
+          "oklch(26.43% 0.0135 347.95)",
+          "oklch(37.86% 0.0135 347.95)",
+          "oklch(49.29% 0.0135 347.95)",
+          "oklch(60.71% 0.0135 347.95)",
+          "oklch(72.14% 0.0135 347.95)",
+          "oklch(83.57% 0.0135 347.95)",
+          "oklch(95% 0.0135 347.95)"
+        ]
+      },
+      "leisure-ink": {
+        "role": "secondary",
+        "displayName": "Leisure Ink",
+        "canonical": "#a05a77",
+        "tonalRamp": [
+          "oklch(15% 0.0982 354.46)",
+          "oklch(26.43% 0.0982 354.46)",
+          "oklch(37.86% 0.0982 354.46)",
+          "oklch(49.29% 0.0982 354.46)",
+          "oklch(60.71% 0.0982 354.46)",
+          "oklch(72.14% 0.0982 354.46)",
+          "oklch(83.57% 0.0982 354.46)",
+          "oklch(95% 0.0982 354.46)"
+        ]
+      },
+      "other-color": {
+        "role": "secondary",
+        "displayName": "Other Color",
+        "canonical": "#9697ab",
+        "tonalRamp": [
+          "oklch(15% 0.0292 283.32)",
+          "oklch(26.43% 0.0292 283.32)",
+          "oklch(37.86% 0.0292 283.32)",
+          "oklch(49.29% 0.0292 283.32)",
+          "oklch(60.71% 0.0292 283.32)",
+          "oklch(72.14% 0.0292 283.32)",
+          "oklch(83.57% 0.0292 283.32)",
+          "oklch(95% 0.0292 283.32)"
+        ]
+      },
+      "other-bg": {
+        "role": "secondary",
+        "displayName": "Other Bg",
+        "canonical": "#f0f0f5",
+        "tonalRamp": [
+          "oklch(15% 0.0067 286.27)",
+          "oklch(26.43% 0.0067 286.27)",
+          "oklch(37.86% 0.0067 286.27)",
+          "oklch(49.29% 0.0067 286.27)",
+          "oklch(60.71% 0.0067 286.27)",
+          "oklch(72.14% 0.0067 286.27)",
+          "oklch(83.57% 0.0067 286.27)",
+          "oklch(95% 0.0067 286.27)"
+        ]
+      },
+      "other-ink": {
+        "role": "secondary",
+        "displayName": "Other Ink",
+        "canonical": "#64667c",
+        "tonalRamp": [
+          "oklch(15% 0.0347 281.02)",
+          "oklch(26.43% 0.0347 281.02)",
+          "oklch(37.86% 0.0347 281.02)",
+          "oklch(49.29% 0.0347 281.02)",
+          "oklch(60.71% 0.0347 281.02)",
+          "oklch(72.14% 0.0347 281.02)",
+          "oklch(83.57% 0.0347 281.02)",
+          "oklch(95% 0.0347 281.02)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Total",
+        "purpose": "Valor total de despesas, com números tabulares."
+      },
+      "headline": {
+        "displayName": "Page title",
+        "purpose": "Título da página."
+      },
+      "title": {
+        "displayName": "Section title",
+        "purpose": "Seções operacionais."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Conteúdo e registros."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Controles e legendas compactas."
+      }
+    },
+    "shadows": [
+      {
+        "name": "period-popover",
+        "value": "0 12px 32px #29234012",
+        "purpose": "Seletor de período aberto."
+      },
+      {
+        "name": "toast",
+        "value": "0 8px 30px #28203620",
+        "purpose": "Confirmação flutuante."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "background-color .18s ease-out, border-color .18s ease-out, color .18s ease-out",
+        "purpose": "Estados de controles."
+      },
+      {
+        "name": "category-distribution",
+        "value": "flex-grow .24s ease-out",
+        "purpose": "Atualização da distribuição."
+      },
+      {
+        "name": "saved-row",
+        "value": "highlight 2.6s ease-out",
+        "purpose": "Lavanda #eee9fd até 35%, terminando na superfície branca."
+      },
+      {
+        "name": "skeleton",
+        "value": "loading 1.5s ease-in-out infinite",
+        "purpose": "Pulso de opacidade .45 no meio do ciclo; removido com reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-desktop-min",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1200px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "940px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal de registro.",
+      "html": "<button class=\"ds-primary\">Nova despesa</button>",
+      "css": ".ds-primary{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;border:1px solid transparent;border-radius:8px;min-height:42px;padding:10px 17px;display:inline-flex;align-items:center;justify-content:center;gap:9px;line-height:1.4;font-weight:600;cursor:pointer;transition:background-color .18s ease-out;background:var(--accent,#6e51d9);color:var(--surface,#fff)}.ds-primary:hover{background:var(--accent-dark,#5738bc)}.ds-primary:active{background:#4e2cac}.ds-primary:focus-visible{outline:3px solid #9176e8;outline-offset:3px}.ds-primary:disabled{opacity:.5;cursor:not-allowed}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Cancelar ou ação alternativa.",
+      "html": "<button class=\"ds-secondary\">Cancelar</button>",
+      "css": ".ds-secondary{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;border:1px solid transparent;border-radius:8px;min-height:42px;padding:10px 17px;display:inline-flex;align-items:center;justify-content:center;gap:9px;line-height:1.4;font-weight:600;cursor:pointer;transition:background-color .18s ease-out;background:var(--surface,#fff);border-color:#dedfe8;color:#505468}.ds-secondary:hover{background:#f1f0f8}.ds-secondary:focus-visible{outline:3px solid #9176e8;outline-offset:3px}.ds-secondary:disabled{opacity:.5;cursor:not-allowed}"
+    },
+    {
+      "name": "Icon button",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "Controle compacto com nome acessível.",
+      "html": "<button class=\"ds-icon\" aria-label=\"Nova despesa\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></button>",
+      "css": ".ds-icon{width:34px;height:34px;border:0;background:transparent;border-radius:7px;display:inline-grid;place-items:center;color:#74778b;cursor:pointer;transition:background-color .18s ease-out,color .18s ease-out}.ds-icon:hover{background:var(--accent-soft,#efebfb);color:var(--accent,#6e51d9)}.ds-icon:active{background:#ded7f5}.ds-icon:focus-visible{outline:3px solid #9176e8;outline-offset:3px}"
+    },
+    {
+      "name": "Text button",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Exportar lista e limpar filtro.",
+      "html": "<button class=\"ds-text\">Limpar filtro</button>",
+      "css": ".ds-text{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;font-size:13px;font-weight:550;display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:var(--accent-ink,#6244bd);padding:7px 0;cursor:pointer}.ds-text:hover{text-decoration:underline;text-underline-offset:4px}.ds-text:focus-visible{outline:3px solid #9176e8;outline-offset:3px}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo de descrição rotulado.",
+      "html": "<label class=\"ds-label\" for=\"ds-description\">Descrição</label><input class=\"ds-input\" id=\"ds-description\" placeholder=\"Ex.: compras no mercado\">",
+      "css": ".ds-label{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;display:block;font-size:13px;color:#51556a;font-weight:550;margin-bottom:7px}.ds-input{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;height:41px;border:1px solid #dedfe8;background:var(--surface,#fff);border-radius:7px;padding:0 11px;color:var(--ink,#202331);transition:border-color .18s ease-out}.ds-input::placeholder{color:var(--muted,#696d7f)}.ds-input:hover{border-color:#b6abc8}.ds-input:focus-visible{outline:3px solid #9176e8;outline-offset:3px}"
+    },
+    {
+      "name": "Active navigation",
+      "kind": "nav",
+      "refersTo": "nav-active",
+      "description": "Navegação selecionada com indicação semântica.",
+      "html": "<a class=\"ds-nav\" href=\"#\" aria-current=\"page\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg>Visão geral</a>",
+      "css": ".ds-nav{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:9px;font-weight:550;text-decoration:none;background:var(--accent-soft,#efebfb);color:var(--accent-ink,#6244bd)}.ds-nav:hover{color:var(--accent-ink,#6244bd)}.ds-nav:focus-visible{outline:3px solid #9176e8;outline-offset:3px}"
+    },
+    {
+      "name": "Category chip",
+      "kind": "chip",
+      "refersTo": "category-chip",
+      "description": "Classificação estável da despesa.",
+      "html": "<span class=\"ds-chip\">Mercado</span>",
+      "css": ".ds-chip{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;font-size:12px;padding:4px 8px;background:var(--category-bg,#f0ebfb);color:var(--category-ink,#654eab);border-radius:5px;display:inline-block}"
+    },
+    {
+      "name": "Quiet panel",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Superfície de dados sem sombra.",
+      "html": "<section class=\"ds-card\"><h2 class=\"ds-title\">Suas despesas</h2><p class=\"ds-description\">Valores em reais (BRL)</p></section>",
+      "css": ".ds-card{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;font-size:14px;background:var(--surface,#fff);color:var(--ink,#202331);border:1px solid var(--line,#e9eaf1);border-radius:16px;overflow:hidden;padding:24px}.ds-title{font-size:16px;font-weight:650;letter-spacing:-.02em;margin:0}.ds-description{font-size:13px;color:var(--muted,#696d7f);margin:5px 0 0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Caderno digital",
+    "overview": "O Caderno digital usa uma base cinza azulada, folhas brancas e violeta para tornar a leitura de despesas calma e precisa. A densidade vem de linhas de registros, divisórias finas e controles compactos; o valor total recebe a maior escala tipográfica.\n\nA composição é plana e operacional. Uma única família sans de sistema sustenta títulos, conteúdo e controles; números tabulares mantêm valores alinhados. Ícones SVG lineares, sem imagens raster, dão orientação sem competir com os dados.",
+    "keyCharacteristics": [
+      "Superfícies claras com divisórias discretas.",
+      "Violeta para ações, seleção e foco.",
+      "Uma família sans e valores tabulares.",
+      "Registros em linhas, com categoria legível também no celular."
+    ],
+    "rules": [
+      {
+        "name": "The Action Violet Rule",
+        "body": "Reserve o violeta de interface para ações, navegação selecionada e foco; as cores de categoria mantêm seu significado de classificação.",
+        "section": "colors"
+      },
+      {
+        "name": "The Aligned Numbers Rule",
+        "body": "Use números tabulares em valores, contagens e datas; alinhe os valores da lista à direita.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Surface Rule",
+        "body": "Mantenha painéis de dados sem sombra; use bordas e fundo para separar conteúdo. Sombras pertencem apenas ao seletor de período aberto e à confirmação flutuante.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do usar os tokens de categoria em conjunto: segmento, fundo e tinta da mesma categoria.",
+      "Do manter rótulos, valores e confirmação em português brasileiro.",
+      "Do manter a categoria sob a descrição quando o chip desktop estiver oculto.",
+      "Do usar SVG linear com pontas e junções arredondadas e foco visível em controles."
+    ],
+    "donts": [
+      "Don't introduzir cartões aninhados para cada lançamento.",
+      "Don't usar cor como única identificação de categoria ou erro.",
+      "Don't transformar a família de sistema em uma fonte de exibição decorativa.",
+      "Don't adicionar imagens raster ou ícones de glifos a este sistema sem uma necessidade de conteúdo."
+    ]
+  }
+}
