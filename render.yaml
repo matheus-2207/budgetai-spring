@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: budgetai-spring
+    runtime: docker
+    plan: free
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: demo
+      - key: SERVER_ADDRESS
+        value: 0.0.0.0

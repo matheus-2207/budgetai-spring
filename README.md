@@ -6,6 +6,10 @@ Projeto educacional desenvolvido para o desafio da DIO **Desenvolvendo sua API I
 
 ## Painel visual local
 
+### Hospedagem de demonstração
+
+O projeto inclui `Dockerfile` e `render.yaml` para publicação no Render Free. O perfil `demo` carrega despesas fictícias no mês atual, usa banco temporário separado dos dados locais e mostra um aviso de demonstração na interface. Veja [como publicar e os limites](docs/DEPLOY.md). A publicação ainda depende de concluir o acesso à hospedagem; não há URL pública confirmada.
+
 Acesse **http://127.0.0.1:8080/** após iniciar a aplicação. A tela funciona sem chave de IA e inclui resumo por período, distribuição por categoria, busca na lista, filtros, cadastro de despesa e exportação CSV da lista filtrada.
 
 A interface é HTML, CSS e JavaScript, servida pelo próprio Spring Boot, sem instalação de ferramentas de frontend e sem fontes ou bibliotecas externas. Foi desenvolvida com a skill Impeccable, na direção Caderno digital confirmada pelo usuário.

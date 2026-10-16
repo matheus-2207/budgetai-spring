@@ -15,6 +15,7 @@ const dateFormat = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'sh
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 const state = { from: '', to: '', category: '', expenses: [], summary: null, loaded: false, savedId: null, request: 0, controller: null };
 let toastTimer;
+let publicDemo = false;
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -79,7 +80,7 @@ async function loadBudget() {
     state.loaded = true;
     renderSummary();
     renderExpenses();
-    $('connection-status').innerHTML = '<span class="status-dot"></span>Salvo neste computador';
+    $('connection-status').innerHTML = `<span class="status-dot"></span>${publicDemo ? 'Demonstração · dados temporários' : 'Salvo neste computador'}`;
   } catch (error) {
     if (request !== state.request) return;
     $('load-error-detail').textContent = error.name === 'AbortError' ? 'A consulta demorou mais que o esperado. Confira se a aplicação está aberta e tente novamente.' : error instanceof TypeError ? 'Não foi possível conectar à aplicação. Confira se ela está aberta e tente novamente.' : error.message;
@@ -288,4 +289,22 @@ document.addEventListener('keydown', (event) => {
 setMonth(today.slice(0, 7));
 $('occurredOn').value = today;
 $('occurredOn').max = today;
-loadBudget();
+async function startDashboard() {
+  try {
+    const configuration = await requestJson('/api/environment', { signal: AbortSignal.timeout(10000) });
+    publicDemo = configuration.publicDemo === true;
+    if (publicDemo) {
+      document.querySelector('.local-note p').innerHTML = 'Demonstração pública.<br><strong>Use dados fictícios.</strong>';
+      document.querySelector('.profile strong').textContent = 'Espaço de demonstração';
+      document.querySelector('.profile div span').textContent = 'Compartilhado e temporário';
+      const notice = document.createElement('p');
+      notice.className = 'demo-notice';
+      notice.textContent = 'Experimente com dados fictícios. Os registros são públicos, compartilhados entre visitantes e apagados quando o servidor reinicia.';
+      document.querySelector('main').prepend(notice);
+    }
+  } catch {
+    $('connection-status').textContent = 'Não foi possível identificar o ambiente';
+  }
+  loadBudget();
+}
+startDashboard();

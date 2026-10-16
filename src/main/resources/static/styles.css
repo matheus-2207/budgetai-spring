@@ -16,3 +16,4 @@
 @media(max-width:700px){.button,.field input,.field select,.filter-control select{min-height:44px}.search-control input{height:38px}.category-item{min-height:44px}.page-footer{line-height:1.7}.list-toolbar{flex-wrap:wrap}.search-control{flex:1 1 160px}.filter-control{flex:1 1 150px}.form-grid{grid-template-columns:1fr 1fr}}
 
 .mobile-category{display:none}@media(max-width:700px){.mobile-category{display:block;color:var(--muted);font-size:12px;line-height:1.5;margin-top:2px}}
+:root .demo-notice { margin: 0 0 24px; padding: 16px 20px; border-radius: 12px; background: #f0ebfb; color: #4c367e; font-size: 14px; line-height: 1.6; }
