@@ -1,0 +1,28 @@
+@baseUrl = http://127.0.0.1:8080
+
+### Saúde
+GET {{baseUrl}}/actuator/health
+
+### Criar despesa (cada execução cria outro registro)
+POST {{baseUrl}}/api/expenses
+Content-Type: application/json
+
+{"description":"Mercado","amount":35.90,"category":"GROCERIES","occurredOn":"2026-01-10"}
+
+### Resumo
+GET {{baseUrl}}/api/expenses/summary?from=2026-01-01&to=2026-01-31
+
+### Categoria
+GET {{baseUrl}}/api/expenses?from=2026-01-01&to=2026-01-31&category=GROCERIES
+
+### Valor inválido: deve retornar 400
+POST {{baseUrl}}/api/expenses
+Content-Type: application/json
+
+{"description":"Inválida","amount":0,"category":"FOOD","occurredOn":"2026-01-10"}
+
+### Consulta de IA (perfil ai e chave necessários)
+POST {{baseUrl}}/api/assistant/text
+Content-Type: application/json
+
+{"message":"Quanto gastei de 1 a 31 de janeiro de 2026? Resuma por categoria."}
